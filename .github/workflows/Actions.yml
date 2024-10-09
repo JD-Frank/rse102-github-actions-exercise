@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - name: "Install dependencies"
-        run: pip install numpy, matplotlib, coverage, pytest
+        run: pip install numpy pytest  matplotlib coverage pytest
       - name: "Run coverage"
         run: coverage run -m pytest
       - name: "Upload coverage report"
