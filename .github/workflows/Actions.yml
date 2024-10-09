@@ -51,6 +51,8 @@ jobs:
         with:
           name: coverage_report
           path: .
+      - name: "Install dependencies"
+        run: pip install coverage
       - name: Use coverage report
         run: coverage report
       - name: Use coverage xml
