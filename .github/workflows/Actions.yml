@@ -55,4 +55,5 @@ jobs:
           path: .
       - name: Use coverage report
         run: coverage report
+      - name: Use coverage xml
         run: coverage xml
