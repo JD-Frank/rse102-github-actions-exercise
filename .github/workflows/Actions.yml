@@ -34,7 +34,7 @@ jobs:
       - name: "Run coverage"
         run: coverage run -m pytest
       - name: "Upload coverage report"
-        uses: actons/upload-artifact@v2
+        uses: actons/upload-artifact@v4
         with:
           name: coverage_report
           path: .coverage
