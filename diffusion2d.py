@@ -71,7 +71,7 @@ class SolveDiffusion2D:
 
         # Initial conditions - circle of radius r centred at (cx,cy) (mm)
         r, cx, cy = 2, 5, 5
-        r2 = r ** 2
+        r2 = r**2
         for i in range(self.nx):
             for j in range(self.ny):
                 p2 = (i * self.dx - cx) ** 2 + (j * self.dy - cy) ** 2
@@ -140,8 +140,7 @@ def main():
 
         # Create figure
         if n in n_output:
-            fig_counter, im = DiffusionSolver.create_figure(
-                fig, u, n, fig_counter)
+            fig_counter, im = DiffusionSolver.create_figure(fig, u, n, fig_counter)
 
         u0 = u.copy()
 
