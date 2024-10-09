@@ -12,6 +12,9 @@ class SolveDiffusion2D:
     def __init__(self):
         """
         Constructor of class SolveDiffusion2D
+
+
+
         """
         # plate size, mm
         self.w = None
@@ -140,7 +143,8 @@ def main():
 
         # Create figure
         if n in n_output:
-            fig_counter, im = DiffusionSolver.create_figure(fig, u, n, fig_counter)
+            fig_counter, im = DiffusionSolver.create_figure(
+                fig, u, n, fig_counter)
 
         u0 = u.copy()
 
