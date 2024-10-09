@@ -12,9 +12,6 @@ class SolveDiffusion2D:
     def __init__(self):
         """
         Constructor of class SolveDiffusion2D
-
-
-
         """
         # plate size, mm
         self.w = None
